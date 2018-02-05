@@ -7138,6 +7138,9 @@ p.info {
   font-weight: 400;
   color: #5b5b5b;
 }
+.emaillist {
+  padding-top: 14px;
+}
 .match-box {
   position: absolute;
   left: -13px;
@@ -7159,7 +7162,7 @@ p.info {
   /* CHANGE ^ --------------------------------------------------- */
 }
 .donation label {
-  color: #aaaaaa;
+  color: #414141;
   font-weight: normal;
   /* CHANGE ^ --------------------------------------------------- */
 }
@@ -7192,24 +7195,24 @@ p.info {
 }
 .donation .form-group ::-webkit-input-placeholder,
 .donation .input-group ::-webkit-input-placeholder {
-  color: #aaaaaa;
+  color: #414141;
   /* CHANGE ^ --------------------------------------------------- */
 }
 .donation .form-group :-moz-placeholder,
 .donation .input-group :-moz-placeholder {
   /* Firefox 18- */
-  color: #aaaaaa;
+  color: #414141;
   /* CHANGE ^ --------------------------------------------------- */
 }
 .donation .form-group ::-moz-placeholder,
 .donation .input-group ::-moz-placeholder {
   /* Firefox 19+ */
-  color: #aaaaaa;
+  color: #414141;
   /* CHANGE ^ --------------------------------------------------- */
 }
 .donation .form-group :-ms-input-placeholder,
 .donation .input-group :-ms-input-placeholder {
-  color: #aaaaaa;
+  color: #414141;
   /* CHANGE ^ --------------------------------------------------- */
 }
 .donation a {
@@ -7252,7 +7255,7 @@ p.info {
   font-size: 10px;
 }
 .donation .charity-amount {
-  color: #aaaaaa;
+  color: #414141;
   /* CHANGE ^ --------------------------------------------------- */
   font-weight: 400;
   margin-top: 15px;
@@ -7271,22 +7274,22 @@ p.info {
 .donation .charity-amount input {
   width: 75px;
   margin-left: 5px;
-  color: #aaaaaa;
+  color: #414141;
   /* CHANGE ^ --------------------------------------------------- */
 }
 .donation .charity-amount ::-webkit-input-placeholder {
-  color: #aaaaaa;
+  color: #414141;
 }
 .donation .charity-amount :-moz-placeholder {
   /* Firefox 18- */
-  color: #aaaaaa;
+  color: #414141;
 }
 .donation .charity-amount ::-moz-placeholder {
   /* Firefox 19+ */
-  color: #aaaaaa;
+  color: #414141;
 }
 .donation .charity-amount :-ms-input-placeholder {
-  color: #aaaaaa;
+  color: #414141;
 }
 .donation .last-col {
   display: flex;
@@ -7417,6 +7420,11 @@ p.info {
   text-transform: uppercase;
   margin-right: 30px;
 }
+@media (max-width: 768px) {
+  .match_remaining {
+    text-align: left;
+  }
+}
 .match_remaining p {
   font-weight: bold;
   margin: 0;
@@ -7430,6 +7438,13 @@ p.info {
   margin: 15px 30px 0px 30px;
   min-width: 250px;
   text-align: right;
+}
+@media (max-width: 768px) {
+  .total-text {
+    float: none;
+    text-align: left;
+    margin-left: 0px;
+  }
 }
 .total-text h3,
 .total-text h2 {
@@ -9059,11 +9074,13 @@ html.ie9 .herophoto {
   background: rgba(231, 44, 42, 0.65);
 }
 .herophoto .tickerwords {
-  font-size: calc(1.82857143vw);
+  font-size: calc(2.28571429vw);
+  margin-bottom: .5em;
 }
 @media (max-width: 768px) {
   .herophoto .tickerwords {
-    font-size: calc(3.65714286vw);
+    font-size: calc(4.57142857vw);
+    margin-bottom: 0;
   }
 }
 .herophoto .ticker {

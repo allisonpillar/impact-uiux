@@ -130,6 +130,10 @@ p.info {
   color: @gray2;
 }
 
+.emaillist {
+  padding-top: 14px;
+}
+
 .match-box {
   position: absolute;
   left: -13px;
@@ -151,7 +155,7 @@ p.info {
       /* CHANGE ^ --------------------------------------------------- */
   }
   label {
-    color: @gray1;
+    color: @gray0;
     font-weight: normal;
           /* CHANGE ^ --------------------------------------------------- */
   }
@@ -184,19 +188,19 @@ p.info {
       margin-top: 10px;
     }
     ::-webkit-input-placeholder {
-      color: @gray1;
+      color: @gray0;
             /* CHANGE ^ --------------------------------------------------- */
     }
     :-moz-placeholder { /* Firefox 18- */
-      color: @gray1;
+      color: @gray0;
             /* CHANGE ^ --------------------------------------------------- */
     }
     ::-moz-placeholder {  /* Firefox 19+ */
-      color: @gray1;
+      color: @gray0;
             /* CHANGE ^ --------------------------------------------------- */
     }
     :-ms-input-placeholder {
-      color: @gray1;
+      color: @gray0;
             /* CHANGE ^ --------------------------------------------------- */
     }
   }
@@ -244,7 +248,7 @@ p.info {
   .charity-amount {
     // border: 1px dashed red;
     // color: @blue0;
-    color: @gray1;
+    color: @gray0;
       /* CHANGE ^ --------------------------------------------------- */
       font-weight: 400;
       margin-top: 15px;
@@ -259,20 +263,20 @@ p.info {
     input {
       width: 75px;
       margin-left: 5px;
-      color: @gray1;
+      color: @gray0;
         /* CHANGE ^ --------------------------------------------------- */
     }
     ::-webkit-input-placeholder {
-      color: @gray1;
+      color: @gray0;
     }
     :-moz-placeholder { /* Firefox 18- */
-      color: @gray1;
+      color: @gray0;
     }
     ::-moz-placeholder {  /* Firefox 19+ */
-      color: @gray1;
+      color: @gray0;
     }
     :-ms-input-placeholder {
-      color: @gray1;
+      color: @gray0;
     }
     /* CHANGE ^ --------------------------------------------------- */
   }
@@ -428,6 +432,9 @@ p.info {
   text-align: right;
   text-transform: uppercase;
   margin-right: 30px;
+  @media (max-width: @screen-sm) {
+    text-align: left;
+  }
   p {
     font-weight: bold;
     margin: 0;
@@ -443,6 +450,11 @@ p.info {
   margin: 15px 30px 0px 30px;
   min-width: 250px;
   text-align: right;
+  @media (max-width: @screen-sm) {
+    float: none;
+    text-align: left;
+    margin-left: 0px;
+  }
   h3,
   h2 {
     color: @blue0;
